@@ -18,7 +18,7 @@
 
 # Importeren van packages die gebruikt kunnen worden
 import pandas as pd
-import geopandas as gpd
+
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import plotly.express as px
@@ -38,7 +38,7 @@ get_ipython().system('pip list')
 
 
 # Dataset inladen als geojson
-gdf_crime = gpd.read_file("https://data.cityofnewyork.us/resource/qgea-i56i.geojson")
+gdf_crime = pd.read_csv("https://data.cityofnewyork.us/resource/qgea-i56i.csv")
 gdf_crime.head()
 
 
